@@ -1,0 +1,27 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+TestResults/
+
+# Downloaded CLI tools (vstest.console.exe etc.) — fetched via nuget install, not source
+/tools/
+
+# Visual Studio / VS Code
+.vs/
+*.user
+*.suo
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Local-only config (Checkpoint #6 keeps the private key in an env var, never a file,
+# but this covers anyone who later adds a local override file anyway)
+appSettings.local.config
+*.local.config
+
+# OS cruft
+Thumbs.db
+.DS_Store
